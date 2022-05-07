@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "name": "Apple MacBook Air 13.3-Inch",
+        "image": "https://i.ibb.co/pLxcvHw/macbook-mgn73-Zp-a-500x500.jpg",
+        "price": 99000,
+        "quantity": 1,
+        "supplier_name": "Rifat Mahmud",
+        "short_description": "Apple MacBook Air 13.3-Inch Retina Display 8-core Apple M1 chip with 8GB RAM, 256GB SSD (MGN63) Space Gray"
+    },
+    {
+        "id": "2",
+        "name": "Apple MacBook Pro 13.3-Inch",
+        "image": "https://i.ibb.co/0Ffytkb/macbook-myd92-500x500.jpg",
+        "price": 143000,
+        "quantity": 1,
+        "supplier_name": "Rifat Mahmud",
+        "short_description": "Apple MacBook Pro 13.3-Inch Retina Display 8-core Apple M1 chip with 8GB RAM, 512GB SSD (MYD92) Space Gray"
+    },
+    {
+        "id": "3",
+        "name": "Asus Vivobook X515MA",
+        "image": "https://i.ibb.co/tqc8k57/vivobook-15-x515ea-01-500x500.jpg",
+        "price": 35000,
+        "quantity": 1,
+        "supplier_name": "Rifat Mahmud",
+        "short_description": "Asus Vivobook X515MA Celeron N4020 15.6' HD Laptop"
+    },
+    {
+        "id": "4",
+        "name": "ASUS VivoBook 15 D515DA",
+        "image": "https://i.ibb.co/mv05Qj7/m515da-500x500.jpg",
+        "price": 50000,
+        "quantity": 1,
+        "supplier_name": "Rifat Mahmud",
+        "short_description": "ASUS VivoBook 15 D515DA Ryzen 3 3250U 15.6' FHD Laptop with Windows 11"
+    },
+    {
+        "id": "5",
+        "name": "Samsung Galaxy Book Pro 360",
+        "image": "https://i.ibb.co/CQF4KGH/galaxy-book-pro-360-02-500x500.jpg",
+        "price": 170000,
+        "quantity": 1,
+        "supplier_name": "Rifat Mahmud",
+        "short_description": "Samsung Galaxy Book Pro 360 Core i7 11th Gen 2-in-1 1TB SSD 15.6' FHD Touch Laptop"
+    },
+    {
+        "id": "6",
+        "name": "Gigabyte A5 X1 Ryzen 9",
+        "image": "https://i.ibb.co/6JfyBv4/a5-x1-01-500x500.jpg",
+        "price": 194000,
+        "quantity": 1,
+        "supplier_name": "Rifat Mahmud",
+        "short_description": "Gigabyte A5 X1 Ryzen 9 5900HX RTX 3070 8GB Graphics 15.6' FHD Gaming Laptop"
+    }
+]
