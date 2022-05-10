@@ -1,5 +1,6 @@
 import React from 'react';
-import Products from '../Products/Products';
+import Inventories from '../Inventories/Inventories';
+
 import Banner from './Banner/Banner';
 
 
@@ -8,7 +9,12 @@ const Home = () => {
         <div>
 
             <Banner></Banner>
-            <Products></Products>
+
+            <Inventories></Inventories>
+
+            <div className='mb-4'>
+                <button type="button" class="btn btn-dark"> Manage Inventories</button>
+            </div>
         </div>
     );
 };
