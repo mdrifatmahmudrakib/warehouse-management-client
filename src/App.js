@@ -8,6 +8,8 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Inventories from './Pages/Inventories/Inventories';
 import InventoryDetails from './Pages/InventoryDetails/InventoryDetails';
 
+import AllInventories from './Pages/AllInventories/AllInventories';
+
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
 
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
+
+        <Route path='/manageinventories' element={<AllInventories></AllInventories>}></Route>
 
 
 

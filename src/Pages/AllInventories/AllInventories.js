@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Inventory from '../Inventory/Inventory';
 
+import ManageInventories from '../ManageInventories/ManageInventories';
 
-const Inventories = () => {
+const AllInventories = () => {
     const [inventories, setInventories] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/inventories')
@@ -11,20 +11,16 @@ const Inventories = () => {
         // .then(data => setInventories(data.slice(0, 3)));
     }, [])
     return (
-        <div className='row row-cols-1 row-cols-md-3  mt-5 mr-5 ml-5'>
-
+        <div>
             {
-                inventories.map(inventory => <Inventory
+                inventories.map(inventory => <ManageInventories
                     key={inventory._id}
                     inventory={inventory}>
 
-                </Inventory>)
+                </ManageInventories>)
             }
-
-
-
         </div>
     );
 };
 
-export default Inventories;
+export default AllInventories;
