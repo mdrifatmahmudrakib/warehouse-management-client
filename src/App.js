@@ -8,8 +8,10 @@ import NotFound from './Pages/Shared/NotFound/NotFound';
 import Inventories from './Pages/Inventories/Inventories';
 import InventoryDetails from './Pages/InventoryDetails/InventoryDetails';
 
-import AllInventories from './Pages/AllInventories/AllInventories';
+// import AllInventories from './Pages/AllInventories/AllInventories';
 import Reviews from './Pages/Reviews/Reviews';
+import AddItem from './Pages/AddItem/AddItem';
+import ManageInventories from './Pages/ManageInventories/ManageInventories';
 
 
 function App() {
@@ -22,7 +24,10 @@ function App() {
 
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
 
-        <Route path='/manageinventories' element={<AllInventories></AllInventories>}></Route>
+        {/* <Route path='/manageinventories' element={<AllInventories></AllInventories>}></Route> */}
+        <Route path='/manageinventories' element={<ManageInventories></ManageInventories>}></Route>
+        <Route path='/additem' element={<AddItem></AddItem>}></Route>
+
 
 
 

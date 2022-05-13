@@ -12,11 +12,12 @@ const Home = () => {
             <Banner></Banner>
 
             <Inventories></Inventories>
-            <Reviews></Reviews>
-
             <div className='mb-4'>
                 <button type="button" class="btn btn-dark"> Manage Inventories</button>
             </div>
+            <Reviews></Reviews>
+
+
         </div>
     );
 };

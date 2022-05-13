@@ -11,18 +11,19 @@ const Inventories = () => {
         // .then(data => setInventories(data.slice(0, 3)));
     }, [])
     return (
-        <div className='row row-cols-1 row-cols-md-3  mt-5 mr-5 ml-5'>
+        <div>
+            <div className='row row-cols-1 row-cols-md-3  mt-5 mr-5 ml-5'>
 
-            {
-                inventories.map(inventory => <Inventory
-                    key={inventory._id}
-                    inventory={inventory}>
+                {
+                    inventories.map(inventory => <Inventory
+                        key={inventory._id}
+                        inventory={inventory}>
 
-                </Inventory>)
-            }
+                    </Inventory>)
+                }
 
 
-
+            </div>
         </div>
     );
 };
