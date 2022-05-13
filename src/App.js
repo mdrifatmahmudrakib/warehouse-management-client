@@ -9,6 +9,7 @@ import Inventories from './Pages/Inventories/Inventories';
 import InventoryDetails from './Pages/InventoryDetails/InventoryDetails';
 
 import AllInventories from './Pages/AllInventories/AllInventories';
+import Reviews from './Pages/Reviews/Reviews';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
         <Route path='/inventory/:inventoryId' element={
           <InventoryDetails></InventoryDetails>
         }></Route>
+
+        <Route path="/review" element={<Reviews></Reviews>}></Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
