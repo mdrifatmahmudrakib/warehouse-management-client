@@ -13,7 +13,7 @@ const Home = () => {
 
             <Inventories></Inventories>
             <div className='mb-4'>
-                <button type="button" class="btn btn-dark"> Manage Inventories</button>
+                <button type="button" className="btn btn-dark"> Manage Inventories</button>
             </div>
             <Reviews></Reviews>
 

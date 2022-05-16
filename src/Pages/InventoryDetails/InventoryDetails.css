@@ -1,0 +1,22 @@
+.shop-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+@media only screen and (max-width: 600px) {
+    .shop-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.product-container {
+    margin: 50px 20px;
+}
+
+.cart-container {
+    margin-top: 40px;
+    background-color: rgba(143, 148, 153, 0.555);
+}

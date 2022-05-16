@@ -12,6 +12,10 @@ import InventoryDetails from './Pages/InventoryDetails/InventoryDetails';
 import Reviews from './Pages/Reviews/Reviews';
 import AddItem from './Pages/AddItem/AddItem';
 import ManageInventories from './Pages/ManageInventories/ManageInventories';
+import Login from './Pages/Login/Login/Login';
+import Register from './Pages/Login/Register/Register';
+import RequireAuth from './Pages/Login/Login/RequireAuth/RequireAuth';
+import MyItem from './Pages/MyItem/MyItem';
 
 
 function App() {
@@ -25,15 +29,31 @@ function App() {
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
 
         {/* <Route path='/manageinventories' element={<AllInventories></AllInventories>}></Route> */}
+
+
+
+
         <Route path='/manageinventories' element={<ManageInventories></ManageInventories>}></Route>
+
         <Route path='/additem' element={<AddItem></AddItem>}></Route>
 
+        <Route path='/myitem' element={
+          <RequireAuth>
+            <MyItem></MyItem>
+          </RequireAuth>
+        }></Route>
 
 
 
+        <Route path="/login" element={<Login></Login>}></Route>
+
+        <Route path="/register" element={<Register></Register>}></Route>
 
         <Route path='/inventory/:inventoryId' element={
-          <InventoryDetails></InventoryDetails>
+
+          <RequireAuth>
+            <InventoryDetails></InventoryDetails>
+          </RequireAuth>
         }></Route>
 
         <Route path="/review" element={<Reviews></Reviews>}></Route>
