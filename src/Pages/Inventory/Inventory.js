@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import "./Inventory.css"
 const Inventory = ({ inventory }) => {
     const { _id, name, image, price, quantity, supplier_name, short_description } = inventory;
     const navigate = useNavigate();
@@ -24,10 +24,10 @@ const Inventory = ({ inventory }) => {
                         </h6>
                     </div>
 
-                    <h6 className='px-4'><span className='fw-bold'>Short Description:</span> {short_description}</h6>
+                    <h6 className='px-4'><span className='fw-bold'></span> {short_description}</h6>
                     <h3 className="card-text text-danger">Price: {price}</h3>
                 </div>
-                <button className="btn btn-danger" onClick={() => handlenavigateToInventoryDetails(_id)}>Update Stock</button>
+                <button className="btn btn-dark" onClick={() => handlenavigateToInventoryDetails(_id)}>Update Stock</button>
 
 
             </div>

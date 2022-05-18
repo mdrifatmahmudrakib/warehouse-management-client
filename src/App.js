@@ -17,6 +17,7 @@ import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/Login/RequireAuth/RequireAuth';
 import MyItem from './Pages/MyItem/MyItem';
 import Blog from './Pages/Blog/Blog';
+import About from './Pages/About/About';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
 
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
 

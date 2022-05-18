@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import { Nav } from 'react-bootstrap';
-import { Navigate, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
+import Reviews from '../Reviews/Reviews';
 // import ManageInventories from '../ManageInventories/ManageInventories';
 // import ManageInventories from '../ManageInventories/ManageInventories';
 import "./InventoryDetails.css"
@@ -64,9 +65,9 @@ const InventoryDetails = () => {
 
 
     return (
-        <div >
+        <div className="d-flex flex-column min-vh-100">
 
-
+            <h1 className='m-4'> Inventory Item</h1>
             <div className="container py-4" >
                 <div className="row justify-content-center">
                     <div className="col-md-12 col-xl-10">
@@ -94,7 +95,7 @@ const InventoryDetails = () => {
                                             <span >Quantity: {quantity}</span>
                                         </p>
                                         <p className='text-left'>
-                                            <span className='fw-bold'>Short Description:</span> {short_description}
+                                            <span className='fw-bold'></span> {short_description}
 
                                         </p>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+// import { useNavigate } from 'react-router-dom';
 
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
@@ -22,7 +23,7 @@ const AddItem = () => {
 
     return (
         <div className='w-50 mx-auto mt-5 mb-5'>
-            <h2 className='text-danger'> Please add Your Item</h2>
+            <h1 className='text-danger'> Please add Your Item</h1>
             <form className='d-flex flex-column mx-3 shadow p-3 my-5' onSubmit={handleSubmit(onSubmit)} >
                 <label className="text-left ">
                     <h5>Item Name</h5>
@@ -50,7 +51,7 @@ const AddItem = () => {
                 <label className="text-left ">
                     <h5>Item Description</h5>
                 </label>
-                <textarea className='mb-2' placeholder='Item Description' {...register("description")} />
+                <textarea className='mb-2' placeholder='Item Description' {...register("short_description")} />
 
                 <label className="text-left ">
                     <h5>Item Photo URL</h5>
@@ -58,7 +59,7 @@ const AddItem = () => {
                 <input className='mb-2' placeholder='Item Photo URL' type="text" {...register("image")} />
 
 
-                <input className='mt-2' type="submit" value='Add Item' />
+                <input className='mt-2 btn btn-dark' type="submit" value='Add Item' />
             </form>
         </div>
     );

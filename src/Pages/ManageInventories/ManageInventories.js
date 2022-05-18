@@ -27,6 +27,7 @@ const ManageInventories = () => {
     // const { _id, name, image, price, quantity, supplier_name, short_description } = inventory;
     return (
         <div >
+            <h1 className='text-danger m-4'>Manage Inventories</h1>
 
             {
                 inventories.map(inventory => <div className="container py-4" key={inventory._id}>

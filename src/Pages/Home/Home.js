@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Inventories from '../Inventories/Inventories';
 import Reviews from '../Reviews/Reviews';
 
@@ -7,6 +8,7 @@ import Contact from './Contact/Contact';
 
 
 const Home = () => {
+    const navigate = useNavigate();
     return (
         <div>
 
@@ -14,7 +16,7 @@ const Home = () => {
 
             <Inventories></Inventories>
             <div className='mb-4'>
-                <button type="button" className="btn btn-dark"> Manage Inventories</button>
+                <button type="button" className="btn btn-danger" onClick={() => navigate('/manageinventories')}> Manage Inventories</button>
             </div>
             <Reviews></Reviews>
             <Contact></Contact>

@@ -3,11 +3,11 @@ import { FaStar } from 'react-icons/fa';
 const Reviews = () => {
     return (
         <div className='bg-light py-4'>
-            <h1 className='m-4'>What Our Client's Say</h1>
+            <h1 className='m-4 text-danger'>What Our Client's Say</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4 mt-0 mx-5 me-5  ">
 
                 <div className="col mb-4">
-                    <div className="card h-100">
+                    <div className="card h-100 shadow-lg p-3 mb-5 bg-body rounded">
 
                         <div className="card-body">
 
@@ -38,7 +38,7 @@ const Reviews = () => {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card h-100">
+                    <div className="card h-100 shadow-lg p-3 mb-5 bg-body rounded">
 
                         <div className="card-body">
 
@@ -69,7 +69,7 @@ const Reviews = () => {
                     </div>
                 </div>
                 <div className="col mb-4">
-                    <div className="card h-100">
+                    <div className="card h-100 shadow-lg p-3 mb-5 bg-body rounded">
 
                         <div className="card-body">
 

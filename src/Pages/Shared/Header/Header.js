@@ -13,36 +13,36 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect sticky='top' expand="lg" bg="light" variant="dark">
+            <Navbar collapseOnSelect sticky='top' expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">
-                        <img height={60} src={logo} alt="" />
+                        <img height={100} src={logo} alt="" />
                     </Navbar.Brand>
                     <Navbar.Toggle className='text-dark' aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse className='text-dark' id="responsive-navbar-nav">
                         <Nav className="mx-auto ">
 
-                            <Nav.Link className='text-dark' as={Link} to="home">Home</Nav.Link>
-                            <Nav.Link className='text-dark' as={Link} to="blog">Blog</Nav.Link>
-                            <Nav.Link className='text-dark' as={Link} to="about">About</Nav.Link>
+                            <Nav.Link className='text-light' as={Link} to="home">Home</Nav.Link>
+                            <Nav.Link className='text-light' as={Link} to="blog">Blog</Nav.Link>
+                            <Nav.Link className='text-light' as={Link} to="about">About</Nav.Link>
 
 
                             {
                                 user && <>
-                                    <Nav.Link className='text-dark' as={Link} to="manageinventories">Manage Items</Nav.Link>
-                                    <Nav.Link className='text-dark' as={Link} to="additem">Add Item</Nav.Link>
-                                    <Nav.Link className='text-dark' as={Link} to="additem">Manage</Nav.Link>
-                                    <Nav.Link className='text-dark' as={Link} to="myitem">My Item</Nav.Link>
+                                    <Nav.Link className='text-light' as={Link} to="manageinventories">Manage Items</Nav.Link>
+                                    <Nav.Link className='text-light' as={Link} to="additem">Add Item</Nav.Link>
+
+                                    <Nav.Link className='text-light' as={Link} to="myitem">My Item</Nav.Link>
                                 </>
                             }
                         </Nav>
                         <Nav>
                             {
                                 user ?
-                                    <button className='text-dark btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Log Out</button>
+                                    <button className='text-light btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Log Out</button>
                                     :
 
-                                    <Nav.Link className='text-dark' as={Link} to="login">
+                                    <Nav.Link className='text-light' as={Link} to="login">
                                         Login
                                     </Nav.Link>}
                         </Nav>
