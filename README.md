@@ -13,15 +13,15 @@ This Website is about Laptop Warehouse where people can see the latest laptops i
 
 ### `Live Website Link`
 
- [running tests](https://facebook.github.io/create-react-app/docs/running-tests) 
+ [Live Website Link](https://facebook.github.io/create-react-app/docs/running-tests) 
 
 
-### `Live Website Link`
+### `Client Side Code`
 
- [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
+ [Client Side Code](https://facebook.github.io/create-react-app/docs/running-tests)
 
 
-### `Live Website Link`
+### `Server Side Code`
 
- [running tests](https://facebook.github.io/create-react-app/docs/running-tests)
+ [Server Side Code](https://facebook.github.io/create-react-app/docs/running-tests)
 
