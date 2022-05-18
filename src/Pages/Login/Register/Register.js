@@ -4,6 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
+
+
+
+
 import "./Register.css"
 const Register = () => {
     const [agree, setAgree] = useState(false)
@@ -37,6 +41,10 @@ const Register = () => {
         console.log('Updated profile');
         navigate('/home')
 
+
+
+
+
     }
     return (
         <div className=' register-form '>
@@ -55,6 +63,7 @@ const Register = () => {
             </form>
             <p>Already have an account? <Link to='/login ' className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Login</Link></p>
             <SocialLogin></SocialLogin>
+
         </div>
     );
 };

@@ -1,8 +1,13 @@
 import React, { useRef } from 'react';
-import { Button, Form, ToastContainer } from 'react-bootstrap';
+import { Button, Form } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import { toast } from 'react-toastify';
+
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from './SocialLogin/SocialLogin';
@@ -38,6 +43,8 @@ const Login = () => {
             <p className='text-danger'> Error: {error.message}</p>
         </div>
     }
+
+
     const handleSubmit = event => {
         event.preventDefault();
         const email = emailRef.current.value;

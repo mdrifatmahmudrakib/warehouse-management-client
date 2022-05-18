@@ -2,8 +2,8 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 const Reviews = () => {
     return (
-        <div className='bg-secondary '>
-            <h1 >What Our Client's Say</h1>
+        <div className='bg-light py-4'>
+            <h1 className='m-4'>What Our Client's Say</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4 mt-0 mx-5 me-5  ">
 
                 <div className="col mb-4">

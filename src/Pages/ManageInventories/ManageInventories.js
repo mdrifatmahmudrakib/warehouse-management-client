@@ -1,10 +1,11 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useItem from '../../hooks/useItem';
 import "../../Pages/ManageInventories/ManageInventories.css"
 const ManageInventories = () => {
 
     const [inventories, setInventories] = useItem();
-
+    const navigate = useNavigate();
     const handleDelete = id => {
         console.log(id);
         const proceed = window.confirm('Are you Sure?');
@@ -62,9 +63,9 @@ const ManageInventories = () => {
 
                                             <span >Quantity: {inventory.quantity}</span>
                                             <div className="d-flex flex-column mt-4">
-                                                <button className="btn btn-primary btn-sm" type="button" onClick={() => handleDelete(inventory._id)}>Delete</button>
-                                                <button className="btn btn-outline-primary btn-sm mt-2" type="button">
-                                                    Update
+                                                <button className="btn btn-primary btn-sm" type="button" onClick={() => handleDelete(inventory._id)}>Delete Item</button>
+                                                <button onClick={() => navigate('/additem')} className="btn btn-outline-primary btn-sm mt-2" type="button">
+                                                    Add New Item
                                                 </button>
                                             </div>
                                         </div>

@@ -27,7 +27,7 @@ const AddItem = () => {
                 <label className="text-left ">
                     <h5>Item Name</h5>
                 </label>
-                <input className='mb-2 ' placeholder='Item Name'  {...register("name", { required: true, maxLength: 20 })} />
+                <input className='mb-2 ' placeholder='Item Name'  {...register("name")} />
 
                 <label className="text-left ">
                     <h5>Item Price</h5>

@@ -1,12 +1,15 @@
 import React from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../../firebase.init';
 import Loading from '../../../Shared/Loading/Loading';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
+
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
     let errorElement;
     if (loading) {
         return <Loading></Loading>
@@ -17,9 +20,14 @@ const SocialLogin = () => {
         </div>
     }
 
-    if (user) {
-        navigate('/additem')
+
+    if (user || user) {
+        navigate(from, { replace: true });
     }
+
+    // if (user) {
+    //     navigate('/additem')
+    // }
     return (
         <div>
             <div className='d-flex align-items-center'>

@@ -3,6 +3,7 @@ import Inventories from '../Inventories/Inventories';
 import Reviews from '../Reviews/Reviews';
 
 import Banner from './Banner/Banner';
+import Contact from './Contact/Contact';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
                 <button type="button" className="btn btn-dark"> Manage Inventories</button>
             </div>
             <Reviews></Reviews>
+            <Contact></Contact>
 
 
         </div>
