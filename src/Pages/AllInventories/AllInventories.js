@@ -5,7 +5,7 @@ import ManageInventories from '../ManageInventories/ManageInventories';
 const AllInventories = () => {
     const [inventories, setInventories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/inventories')
+        fetch('https://immense-sea-41969.herokuapp.com/inventories')
             .then(res => res.json())
             .then(data => setInventories(data));
         // .then(data => setInventories(data.slice(0, 3)));

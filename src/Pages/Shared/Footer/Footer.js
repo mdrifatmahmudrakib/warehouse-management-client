@@ -12,9 +12,6 @@ const Footer = () => {
         <div className='footer'>
 
 
-
-
-
             <footer class="footer-main  ">
                 <div class="site-section">
                     <div class="container">
@@ -27,7 +24,7 @@ const Footer = () => {
                             <div class="ml-auto">
                                 {/* <a href="#" class="btn btn-dark rounded-0 py-3 px-5">Contact us</a> */}
 
-                                <Nav.Link className="btn btn-dark rounded-0 py-3 px-5 " href="/additem">Learn More</Nav.Link>
+                                <Nav.Link className="btn btn-dark rounded-0 py-3 px-5 " href="/additem">Learn More.</Nav.Link>
                             </div>
                         </div>
                         <div class="row">
@@ -35,16 +32,16 @@ const Footer = () => {
                             <div class="col-sm">
 
                                 <img height={100} src={logo} alt="" />
-                                <p class="copyright">
+                                <p className="copyright">
 
                                 </p>
                             </div>
 
-                            <div class="col-sm d-flex flex-column">
+                            {/* <div class="col-sm d-flex flex-column">
                                 <h3>Quick Links</h3>
-                                <Nav.Link className="text-light" href="/home">Home</Nav.Link>
-                                <Nav.Link className="text-light" href="/blog">Blog</Nav.Link>
-                                <Nav.Link className="text-light" href="/about">About</Nav.Link>
+                                <Nav.Link className="text-light" href="https://laptop-warehouse-69a42.web.app">Home</Nav.Link>
+                                <Nav.Link className="text-light" href="https://laptop-warehouse-69a42.web.app/blog">Blog</Nav.Link>
+                                <Nav.Link className="text-light" href="https://laptop-warehouse-69a42.web.app/about">About</Nav.Link>
 
 
 
@@ -62,6 +59,13 @@ const Footer = () => {
 
 
 
+                            </div> */}
+
+                            <div class="col-sm d-flex flex-column">
+                                <p className='footer-text text-white mt-4'>© 2022 Laptop Warehouse. All rights reserved
+                                    <br />
+                                    Build by Rifat Mahmud Rakib
+                                </p>
                             </div>
                             <div class="col-md-3 ">
                                 <h3>Follow us</h3>
@@ -74,12 +78,7 @@ const Footer = () => {
                             </div>
 
                         </div>
-                        <div>
-                            <p className='footer-text text-white mt-4'>© 2022 Laptop Warehouse. All rights reserved
-                                <br />
-                                Web Design by Rifat Mahmud
-                            </p>
-                        </div>
+
                     </div>
                 </div>
 

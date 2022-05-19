@@ -15,7 +15,7 @@ const InventoryDetails = () => {
     const [reStock, setReStock] = useState(false);
 
     useEffect(() => {
-        const url = `http://localhost:5000/inventory/${inventoryId}`;
+        const url = `https://immense-sea-41969.herokuapp.com/inventory/${inventoryId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data));
@@ -29,7 +29,7 @@ const InventoryDetails = () => {
                 quantity: (quantity - 1)
             };
 
-            const url = `http://localhost:5000/inventory/${inventoryId}`;
+            const url = `https://immense-sea-41969.herokuapp.com/inventory/${inventoryId}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -50,7 +50,7 @@ const InventoryDetails = () => {
             quantity: (quantity + amount),
         }
         console.log(newQuantity)
-        const url = `http://localhost:5000/inventory/${inventoryId}`;
+        const url = `https://immense-sea-41969.herokuapp.com/inventory/${inventoryId}`;
         fetch(url, {
             method: 'PUT',
             headers: {

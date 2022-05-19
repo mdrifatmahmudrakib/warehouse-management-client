@@ -3,6 +3,8 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 // import { useNavigate } from 'react-router-dom';
 
 import auth from '../../firebase.init';
+import Inventories from '../Inventories/Inventories';
+import ManageInventories from '../ManageInventories/ManageInventories';
 // import Inventory from '../Inventory/Inventory';
 import MySingleItem from '../MySingleItem/MySingleItem';
 
@@ -13,7 +15,7 @@ const MyItem = () => {
     // console.log(email);
 
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/myitem?email=${email}`)
+    //     fetch(`https://immense-sea-41969.herokuapp.com/myitem?email=${email}`)
     //         .then((res) => res.json())
     //         .then((data) => setItem(data));
 
@@ -25,7 +27,7 @@ const MyItem = () => {
     // const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myitem?email=${email}`)
+        fetch(`https://immense-sea-41969.herokuapp.com/myitem?email=${email}`)
             .then(res => res.json())
             .then(data => setInventories(data));
         // .then(data => setInventories(data.slice(0, 3)));
@@ -47,6 +49,7 @@ const MyItem = () => {
 
 
         </div>
+
 
     );
 };

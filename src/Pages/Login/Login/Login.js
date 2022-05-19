@@ -72,15 +72,15 @@ const Login = () => {
 
 
         <div className='container '>
-            <div class="card m-3 border-0 justify-content-center" >
-                <div class="row g-0 ">
-                    <div class="col-md-6">
-                        <img src={login} class="img-fluid rounded-start" alt="..." />
+            <div className="card m-3 border-0 justify-content-center" >
+                <div className="row g-0 ">
+                    <div className="col-md-6">
+                        <img src={login} className="img-fluid rounded-start" alt="..." />
                     </div>
 
 
 
-                    <div class="col-md-6 bg-dark border  pt-4 align-items-center  ">
+                    <div className="col-md-6 bg-dark border  pt- align-items-center  ">
                         <div className='rounded-5 ' >
                             <div className='  mx-auto my-4   '>
                                 <h2 className='text-center text-danger m-4 '>Please Login</h2>

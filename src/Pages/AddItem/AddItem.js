@@ -9,7 +9,7 @@ const AddItem = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/additem`;
+        const url = `https://immense-sea-41969.herokuapp.com/additem`;
         fetch(url, {
             method: 'POST',
             headers: {
@@ -72,10 +72,10 @@ const AddItem = () => {
 
         <div className='container '>
             <h1 className='text-danger m-4'> Please add Your Item</h1>
-            <div class="card border-0 m-4" >
-                <div class="row g-0">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <img src={additem} class="img-fluid rounded-start" alt="..." />
+            <div className="card border-0 m-4" >
+                <div className="row g-0">
+                    <div className="col-md-6 d-flex align-items-center">
+                        <img src={additem} className="img-fluid rounded-start" alt="..." />
                     </div>
 
 

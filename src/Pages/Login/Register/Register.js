@@ -50,15 +50,15 @@ const Register = () => {
 
 
         <div className='container '>
-            <div class="card m-3 border-0" >
-                <div class="row g-0">
-                    <div class="col-md-6">
-                        <img src={reg} class="img-fluid rounded-start" alt="..." />
+            <div className="card m-3 border-0" >
+                <div className="row g-0">
+                    <div className="col-md-6">
+                        <img src={reg} className="img-fluid rounded-start" alt="..." />
                     </div>
 
 
 
-                    <div class="col-md-6 bg-dark border justify-content-center ">
+                    <div className="col-md-6 bg-dark border justify-content-center ">
                         <div className='rounded-5 m-4' >
                             <div className="register-form  ">
                                 <h2 className="m-4 text-danger" style={{ textAlign: 'center' }}>Please Register</h2>
