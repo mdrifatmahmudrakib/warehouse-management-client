@@ -19,12 +19,12 @@ This Website is about Laptop Warehouse where people can see the latest laptops i
 
 ### `Client Side Code`
 
- [Client Side Code](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdrifatmahmudrakib)
+ [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdrifatmahmudrakib](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-mdrifatmahmudrakib)
 
 
 ### `Server Side Code`
 
- [Server Side Code](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdrifatmahmudrakib)
+ [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdrifatmahmudrakib](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-mdrifatmahmudrakib)
 
 
 ### `Stackoverflow Questions`
