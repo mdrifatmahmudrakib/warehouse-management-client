@@ -32,10 +32,6 @@ function App() {
 
         <Route path='/inventories' element={<Inventories></Inventories>}></Route>
 
-        {/* <Route path='/manageinventories' element={<AllInventories></AllInventories>}></Route> */}
-
-
-
 
         <Route path='/manageinventories' element={
           <RequireAuth>
@@ -75,7 +71,6 @@ function App() {
       <Footer></Footer>
 
 
-      {/* 404 and login desing stact */}
 
     </div>
   );
