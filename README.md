@@ -14,7 +14,7 @@ This Website is about Laptop Warehouse where people can see the latest laptops i
 
 ### `Live Website Link`
 
- [Live Website Link](https://laptop-warehouse-69a42.web.app) 
+ [https://laptop-warehouse-69a42.web.app](https://laptop-warehouse-69a42.web.app) 
 
 
 ### `Client Side Code`
