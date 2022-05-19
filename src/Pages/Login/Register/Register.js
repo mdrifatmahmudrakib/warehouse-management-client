@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../Login/SocialLogin/SocialLogin';
-
+import reg from '../../../Images/reg.jpg';
 
 
 
@@ -47,24 +47,44 @@ const Register = () => {
 
     }
     return (
-        <div className=' register-form '>
-            <h2 style={{ textAlign: 'center' }}>Please Register</h2>
-            <form onSubmit={handleRegister}>
-                <input type="text" name='name' placeholder='Your Name' />
-                <input type="email" name="email" id="1" placeholder='Email Address' required />
-                <input type="password" name="password" id="2" placeholder='Password' required />
-                <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept terms and conditions</label>
-                <input
-                    disabled={!agree}
-                    className='btn btn-primary w-50 mx-auto d-block my-2 '
-                    type="submit"
-                    value="Register" />
-            </form>
-            <p>Already have an account? <Link to='/login ' className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Login</Link></p>
-            <SocialLogin></SocialLogin>
 
+
+        <div className='container '>
+            <div class="card m-3 border-0" >
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <img src={reg} class="img-fluid rounded-start" alt="..." />
+                    </div>
+
+
+
+                    <div class="col-md-6 bg-dark border justify-content-center ">
+                        <div className='rounded-5 m-4' >
+                            <div className="register-form  ">
+                                <h2 className="m-4 text-danger" style={{ textAlign: 'center' }}>Please Register</h2>
+                                <form onSubmit={handleRegister}>
+                                    <input type="text" name='name' placeholder='Your Name' />
+                                    <input type="email" name="email" id="1" placeholder='Email Address' required />
+                                    <input type="password" name="password" id="2" placeholder='Password' required />
+                                    <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
+                                    <label className={`ps-2 text-light ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept terms and conditions</label>
+                                    <input
+                                        disabled={!agree}
+                                        className='btn btn-danger  w-50 mx-auto d-block my-2 '
+                                        type="submit"
+                                        value="Register" />
+                                </form>
+                                <p className="text-light">Already have an account? <Link to='/login ' className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Login</Link></p>
+                                <SocialLogin></SocialLogin>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     );
 };
 export default Register;

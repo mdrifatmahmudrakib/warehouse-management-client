@@ -64,7 +64,7 @@ const ManageInventories = () => {
 
                                             <span >Quantity: {inventory.quantity}</span>
                                             <div className="d-flex flex-column mt-4">
-                                                <button className="btn btn-primary btn-sm" type="button" onClick={() => handleDelete(inventory._id)}>Delete Item</button>
+                                                <button className="btn btn-primary btn-sm btn-danger" type="button " onClick={() => handleDelete(inventory._id)}>Delete Item</button>
                                                 <button onClick={() => navigate('/additem')} className="btn btn-outline-primary btn-sm mt-2" type="button">
                                                     Add New Item
                                                 </button>

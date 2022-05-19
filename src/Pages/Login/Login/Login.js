@@ -11,7 +11,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from './SocialLogin/SocialLogin';
-
+import login from '../../../Images/login.jpg';
+// import Banner from '../../Home/Banner/Banner';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -67,26 +68,46 @@ const Login = () => {
     }
 
     return (
-        <div className=' w-50 mx-auto my-4'>
-            <h2 className='text-center'>Please Login</h2>
-            <Form onSubmit={handleSubmit}>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
-                </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
-                </Form.Group>
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
-                    Login
-                </Button>
-            </Form>
-            {errorElement}
-            <p>You don't have an account? <Link to='/register ' className='text-danger pe-auto text-decoration-none ' onClick={navigateRegister}>Please Register</Link></p>
-            <p>Forget your password? <button to='/register ' className='btn btn-link text-danger pe-auto text-decoration-none ' onClick={resetPassword}>Reset Password</button></p>
-            <SocialLogin></SocialLogin>
-            <ToastContainer />
+
+
+        <div className='container '>
+            <div class="card m-3 border-0 justify-content-center" >
+                <div class="row g-0 ">
+                    <div class="col-md-6">
+                        <img src={login} class="img-fluid rounded-start" alt="..." />
+                    </div>
+
+
+
+                    <div class="col-md-6 bg-dark border  pt-4 align-items-center  ">
+                        <div className='rounded-5 ' >
+                            <div className='  mx-auto my-4   '>
+                                <h2 className='text-center text-danger m-4 '>Please Login</h2>
+                                <Form onSubmit={handleSubmit}>
+                                    <Form.Group className="mb-3" controlId="formBasicEmail">
+                                        <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
+                                    </Form.Group>
+
+                                    <Form.Group className="mb-3" controlId="formBasicPassword">
+                                        <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
+                                    </Form.Group>
+                                    <Button variant="danger w-50 mx-auto d-block mb-2" type="submit">
+                                        Login
+                                    </Button>
+                                </Form>
+                                {errorElement}
+                                <p className='text-light'>You don't have an account? <Link to='/register ' className='text-danger pe-auto text-decoration-none ' onClick={navigateRegister}>Please Register</Link></p>
+                                <p className='text-light'>Forget your password? <button to='/register ' className='btn btn-link text-danger pe-auto text-decoration-none ' onClick={resetPassword}>Reset Password</button></p>
+                                <SocialLogin></SocialLogin>
+                                <ToastContainer />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
     );
 };

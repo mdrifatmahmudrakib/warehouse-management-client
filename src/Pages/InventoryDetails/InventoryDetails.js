@@ -67,7 +67,7 @@ const InventoryDetails = () => {
     return (
         <div className="d-flex flex-column min-vh-100">
 
-            <h1 className='m-4'> Inventory Item</h1>
+            <h1 className='m-4 text-danger'> Inventory Item</h1>
             <div className="container py-4" >
                 <div className="row justify-content-center">
                     <div className="col-md-12 col-xl-10">
@@ -114,7 +114,7 @@ const InventoryDetails = () => {
 
                                             <button className='m-2 btn btn-danger' onClick={handleDeliver}>Delivered</button>
 
-                                            <button className='m-2 btn btn-success' onClick={() => navigate('/manageinventories')}>Manage Inventory</button>
+                                            <button className='m-2 btn btn-dark' onClick={() => navigate('/manageinventories')}>Manage Inventory</button>
                                         </div>
                                     </div>
 
